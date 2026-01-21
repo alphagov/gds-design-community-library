@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home – GDS Design Community
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      GDS Design Community
+    </h1>{{releaseVersion | log }}
+
+    <h2 class="govuk-heading-m">
+      Accessibility statement
+    </h2>
+
+    <p class="govuk-body">This accessibility statement applies to the GDS Design Community library website at [link].</p>
+
+    <p class="govuk-body">We want as many people as possible to be able to use this website. For example, you should be able to:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>change colours, contrast levels and fonts</li>
+      <li>zoom in up to 400% without the text spilling off the screen</li>
+      <li>listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA,
+        TalkBack and VoiceOver)</li>
+      <li>navigate most of the website using just a keyboard</li>
+      <li>navigate most of the website using just a mouse and on-screen keyboard</li>
+      <li>navigate most of the website using speech recognition software</li>
+
+      <p class="govuk-body">The team has also made the website text as simple as possible to understand.</p>
+
+      <p class="govuk-body">AbilityNet has <a href="https://mcmw.abilitynet.org.uk/" class="govuk-link">advice on making your device easier to use</a> if you have a disability.</p>
+
+      <h2 class="govuk-heading-m"> Feedback and contact information </h2>
+
+      <p class="govuk-body">We are always looking to improve the accessibility of this website. If you find any problems that are not
+        listed on this page or think this website is not meeting accessibility requirements, email the team at [link].
+      </p>
+
+      <p class="govuk-body"></p>We will review your request and get back to you in X working days.</p>
+
+      <h2 class="govuk-heading-m"> Enforcement procedure </h2>
+
+      <p class="govuk-body">The Government Digital Service (<abbr>GDS</abbr>) is committed to making its websites accessible, in accordance
+        with the <a href="https://www.legislation.gov.uk/uksi/2018/952/contents" class="govuk-link">Public Sector Bodies
+          (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</a>.</p>
+
+      <p class="govuk-body">The Equality and Human Rights Commission (<abbr>EHRC</abbr>) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you contact us with a complaint and you’re not happy with our response, <a href="https://www.equalityadvisoryservice.com/" class="govuk-link">contact the Equality Advisory and Support Service (<abbr>EASS</abbr>)</a>.</p>
+
+
+      <h3 class="govuk-heading-s"> Disproportionate burden </h3>
+
+      <p class="govuk-body">We do not currently make any claims of disproportionate burden for any of our products.</p>
+
+      <h2 class="govuk-heading-m"> Preparation of this accessibility statement </h2>
+
+      <p class="govuk-body">This statement was prepared on xx xx xx. It was last reviewed on xx xx xx.</p>
+
+  </div>
+</div>
+
+{% endblock %}

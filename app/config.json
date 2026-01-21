@@ -1,5 +1,5 @@
 {
-  "serviceName": "Service name goes here",
+  "serviceName": "GDS Design Community library",
   "plugins": {
     "govuk-frontend": {
       "rebrand": true

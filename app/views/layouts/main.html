@@ -8,9 +8,58 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 
 {% block header %}
 
-    {{ govukHeader() }}
-    {{ govukServiceNavigation({
-        serviceName: serviceName
-    })}}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 
+{{ govukHeader({
+  classes: "govuk-header--full-width-border"
+}) }}
+{{ govukServiceNavigation({
+  serviceName: "GDS Design Community library",
+  serviceUrl: "#",navigation: [
+    {
+      href: "/roles/index",
+      text: "Design and Accessibility roles"
+    },
+    {
+      href: "#",
+      text: "Findings and research"
+    },
+    {
+      href: "#",
+      text: "Learning and development"
+    },
+    {
+      href: "#",
+      text: "Structure and directorates"
+    },
+    {
+      href: "#",
+      text: "Resources across the community"
+    }
+  ]
+}) }} 
+{% endblock %}
+
+{% block footer %}
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+
+{{ govukFooter({
+  meta: {
+    items: [
+      {
+        href: "app\views\accessibility-statement.html",
+        text: "Accessibility"
+      },
+      {
+        href: "#",
+        text: "Item 2"
+      },
+      {
+        href: "#",
+        text: "Item 3"
+      }
+    ]
+  }
+}) }}
 {% endblock %}
