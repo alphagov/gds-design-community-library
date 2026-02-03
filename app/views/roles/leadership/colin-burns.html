@@ -1,0 +1,43 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Content page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+text: "Back",
+href: "/whos-who/index"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">Colin Burns</h1>
+    <h2 class="govuk-heading-l govuk-hint">Chief Design Officer (Interim)</h2>
+
+    <span>picture of person here</span>
+
+    <h3 class="govuk-heading-m">Role at GDS</h3>
+    <p class="govuk-body">Colin is here to put Design at the head of the table. Working at the same level as other
+      Directors, he's here to enable and facilate difficult conversations about when design needs to be involved, as
+      well as encourage early adoption of knowledge and experience.</p>
+
+    <p class="govuk-body">He has also worked alongside the Heads of Design to develop pathways for career progression,
+      including the introduction of a new role; the design delivery manager. This new role will open up a new area of design and
+      bridge the gap between design and delivery. </p>
+
+    <h3 class="govuk-heading-m">Biography</h3>
+    <p class="govuk-body">Colin is a creative leader and design manager, with over 30 years working in
+      multi-disciplinary teams.</p>
+
+    <p class="govuk-body">With a training in Industrial Design and working in Interaction Design, he has been part
+      of a number of storied creative organisations across a wide range of industries, including Technology, Media, FMCG
+      and Retail.</p>
+
+    <p class="govuk-body">His perspectives on making the most of the resources that organisations have for innovation
+      have been shaped by working with organisations like, Apple, BBC, IDEO, British Airways, Prada, ASDA, Procter & Gamble,
+      Unilever and Hewlett Packard. </p>
+
+  </div>
+</div>
+
+
+{% endblock %}

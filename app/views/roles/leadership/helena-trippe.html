@@ -1,0 +1,35 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Content page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+text: "Back",
+href: "/whos-who/index"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">Helena Trippe</h1>
+    <h2 class="govuk-heading-l govuk-hint">Head of UCD for Digital Identity</h2>
+
+    <span>picture of person here</span>
+
+    <h3 class="govuk-heading-m">Role at GDS</h3>
+    <p class="govuk-body">Helena is head of UCD for Digital Identity. She works within the central UCD pod, casting an
+      eye over everything that comes into the DI directorate and working our where strings of work can be joined up. She
+      provides advice on how to think about things from both design and accessibility perspectives, and always champions
+      the work of her teams. </p>
+
+    <p class="govuk-body">Helena is someone that has extensive knowledge of the OneLogin service, and if she doesn't
+      have the answer you need, she will know the person who will. She's constantly evolving the way in which designers
+      in her directorate work, to ensure that they are streamlined and not duplicating effort. </p>
+
+    <h3 class="govuk-heading-m">Biography</h3>
+    <p class="govuk-body">xxx </p>
+
+  </div>
+</div>
+
+
+{% endblock %}
