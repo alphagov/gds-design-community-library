@@ -3,23 +3,72 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">Welcome to GDS Design</h1>
+    <h1 class="govuk-heading-l">The Design community and roles at GDS</h1>
 
-    <p>
-      This resource has been designed to make it easier to find the information
-      you need to know about Design and Accessibility at GDS.
-    </p>
-    
-    <h2 class="govuk-heading-m">About this resource</h2>
+    <h2 class="govuk-heading-m" id="design-community">Design community</h2>
 
-    <p class="govuk-body">You can use this resource to:</p>
+    <p class="govuk-body">There are approximate 65 of us here in the GDS Design Community, and our communuity is still
+      growing. We have graphic, interaction and service designers in GDS. We work across the following areas:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>find out who is in the GDS Design Community</li>
-      <li>access resources from across the community</li>
-      <li>share learnings and findings more widely and easily</li>
-      <li>sign up for learning and development opportunities</li>
+      <li>Digital Identity</li>
+      <li>GOV.UK</li>
+      <li>Products and Services</li>
+      <li>Service transformation</li>
+      <li>i.AI</li>
     </ul>
+
+    <h2 class="govuk-heading-m" id="design-community">Communicating as a community</h2>
+    <p class="govuk-body">Slack is the primary way that we communicate as a community. We have a number of channels that
+      are helpful for you be a part of, as they will keep you updates on what is happening. </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>#design</li>
+      <li>#graphicdesigners</li>
+      <li>#interaction-designers</li>
+      <li>#service-designers</li>
+      <li>#design-assessment</li>
+      <li>#govuk-design-system</li>
+    </ul>
+    </p>
+
+    <p class="govuk-body">There is also a cross-government Slack that you can be invited to join. This has users from
+      across government who can ask questions, provide advice or even just chat. There are some design specific channels
+      that are recommended that you join, if you choose to be a part of the cross-government Slack:
+    <ul class="govuk-list govuk-list--bullet">
+      <li>#design</li>
+      <li>#prototype-kit</li>
+      <li>#servicedesign</li>
+      <li>#design-ethics</li>
+      <li>#climate-emergency</li>
+    </ul>
+    </p>
+
+    <h3 class="govuk-heading-s">Mailing lists</h3>
+
+    <p class="govuk-body">You can email all designers at GDS at <a
+        href="mailto:gds-designers@digital.cabinet-office.gov.uk"
+        class="govuk-link">gds-designers@digital.cabinet-office.gov.uk </a>(opens in email client).
+    </p>
+
+    <h2 class="govuk-heading-m" id="design-community-meetings">Design Community Meetings</h2>
+
+    <p class="govuk-body">We meet every alternate Thursday at 2pm using <a href="meet.google.com/rtr-scar-beq"
+        class="govuk-link">Google Meet</a>. We also will meet for community away days once a quarter. These are away
+      days are organised by the Design Leads. </p>
+
+    <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+      {{ govukPagination({
+      next: {
+      labelText: "Design roles",
+      href: "/roles/design-roles"
+      }
+      }) }}
+
+      <p class="govuk-body"><a href="/design-and-accessibility/print">View a printable version of the whole guide</a>
+      </p>
   </div>
 </div>
+
 
 {% endblock %}

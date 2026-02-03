@@ -1,0 +1,35 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Content page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Design Roles at GDS</h1>
+
+        <h2 class="govuk-heading-m" id="design-community">Design community</h2>
+
+        <p class="govuk-body">Our community is made up of a mix of people from a variety of backgrounds. We have folks
+            who have always known that they were going to work in design, as well as others who have worked in very
+            different professions. This vast wealth of experience means that our design community can draw on our
+            experiences, as well as others to when designing.</p>
+
+
+
+        <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+            {{ govukPagination({
+            previous: {
+            labelText: "The Design community and roles at GDS",
+            href: "/roles/index"
+            },
+            next: {
+            labelText: "#",
+            href: "#"
+            }
+            }) }}
+
+            <p class="govuk-body"><a href="/design-and-accessibility/print">View a printable version of the whole
+                    guide</a></p>
+    </div>
+</div>
+
+{% endblock %}

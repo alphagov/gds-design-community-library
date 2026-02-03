@@ -19,7 +19,11 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
   serviceUrl: "#",navigation: [
     {
       href: "/roles/index",
-      text: "Design and Accessibility roles"
+      text: "Design roles"
+    },
+    {
+      href: "/whos-who/index",
+      text: "Who's who?"
     },
     {
       href: "#",
@@ -28,10 +32,6 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
     {
       href: "#",
       text: "Learning and development"
-    },
-    {
-      href: "#",
-      text: "Structure and directorates"
     },
     {
       href: "#",
@@ -62,4 +62,9 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
     ]
   }
 }) }}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="/assets/js/dfefrontend.min.js"></script>
 {% endblock %}

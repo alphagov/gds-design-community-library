@@ -1,0 +1,88 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Content page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<head>
+  <!-- // ... -->
+  <link rel="stylesheet" href="/stylesheets/nhsuk-frontend.min.css">
+  <!-- // ... -->
+</head>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Who's who in the Design Community</h1>
+
+    <p class="govuk-body">Our design community is made up of a leadership team, as well as the designers that are at the
+      heart of the community. You can learn more about the Chief Design Officer and Heads of Design, and find out who
+      works in which area.</p>
+
+    <h2 class="govuk-heading-m" id="design-community">Design leadership</h2>
+
+    {% from 'node_modules/dfe-frontend/packages/components/card/macro.njk' import card %}
+    {{ card({
+    cards: [
+    {
+    "imageCard": false,
+    "imagePath": "/images/sample-image.jpg",
+    "altText": "Colin Burns",
+    "headingLevel": "3",
+    "linkCard": true,
+    "link": "#",
+    "openInNewTab": false,
+    "heading": "Colin Burns",
+    "description": "Chief Design Officer (Interim)",
+    "meta": ""
+    },
+    {
+    "imageCard": false,
+    "imagePath": "/images/sample-image.jpg",
+    "altText": "Helena Trippe",
+    "headingLevel": "3",
+    "linkCard": true,
+    "link": "#",
+    "openInNewTab": false,
+    "heading": "Helena Trippe",
+    "description": "Head of UCD for Digital Identity",
+    "meta": ""
+    },
+    {
+    "imageCard": false,
+    "imagePath": "/images/sample-image.jpg",
+    "altText": "Laura Yarrow",
+    "headingLevel": "3",
+    "linkCard": true,
+    "link": "#",
+    "openInNewTab": false,
+    "heading": "Laura Yarrow",
+    "description": "Head of Design for GOV.UK",
+    "meta": ""
+    },
+    {
+    "imageCard": false,
+    "imagePath": "/images/sample-image.jpg",
+    "altText": "Kuba Bartwicki",
+    "headingLevel": "3",
+    "linkCard": true,
+    "link": "#",
+    "openInNewTab": false,
+    "heading": "Kuba Bartwicki",
+    "description": "Head of Design for Product and Services.",
+    "meta": ""
+    }
+    ]
+    }) }}
+
+    <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+      {{ govukPagination({
+      next: {
+      labelText: "Design roles",
+      href: "/roles/design-roles"
+      }
+      }) }}
+
+      <p class="govuk-body"><a href="/design-and-accessibility/print">View a printable version of the whole guide</a>
+      </p>
+  </div>
+</div>
+
+{% endblock %}
