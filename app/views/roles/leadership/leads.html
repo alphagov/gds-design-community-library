@@ -1,0 +1,453 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Content page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+text: "Back",
+href: "/whos-who/index"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">Design leads</h1>
+    <h2 class="govuk-heading-l govuk-hint">Lead designers across GDS</h2>
+
+    <p class="govuk-body">explanation of what a lead designer is </p>
+
+    {% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Arindra Das"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "Digital Identity"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Chris Choy"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Design Lead"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "Digital Identity"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Jeremy Yun"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "GOV.UK"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Josh Spencer"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Graphic Data Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "GOV.UK"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Marina Filiba"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "GOV.UK"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Sarah Kirby-Ginns"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "GOV.UK"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Suhail Hussain"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Interaction Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "GOV.UK"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Alex Gray"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "Products and Services"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Ash Spurr"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "Products and Services"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Chris Ballantine-Thomas"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "Products and Services"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+    
+      {{ govukSummaryList({
+        card: {
+          title: {
+            text: "Christine Wuerth"
+          }
+        },
+        rows: [
+          {
+            key: {
+              text: "Title"
+            },
+            value: {
+              html: "Lead Designer"
+            }
+          },{
+            key: {
+              text: "Directorate"
+            },
+            value: {
+              html: "Products and Services"
+            }
+          },{
+            key: {
+              text: "Things I am good at"
+            },
+            value: {
+              html: "xxx"
+            }
+          },{
+            key: {
+              text: "Fun fact"
+            },
+            value: {
+              html: "xxx"
+            }
+          }
+        ]
+      }) }}
+
+  </div>
+</div>
+
+
+{% endblock %}
