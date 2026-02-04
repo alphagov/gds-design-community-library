@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "layouts/main.html" %} {% block pageTitle %} Content page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+text: "Back",
+href: "/whos-who/index"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">Digital Identity</h1>
+
+    <p class="govuk-body">GOV.UK One Login lets your users sign in and prove their identity so they can access your
+      service quickly and easily.</p>
+
+    <p class="govuk-body">It will ultimately allow users to access any government service using the same email
+      address and password, and also only need to prove their identity once.</p>
+
+    <h2 class="govuk-heading-l">Teams in Digital Identity</h2>
+
+    <p class="govuk-body">The Digital Identity directorate is made up of pods of people. Some of these pods have UCD
+      capacity and will have assigned designers. Others will rely of the central UCD team or other teams to help them
+      with design work.</p>
+
+    <p class="govuk-body">Here is a list of designers and the teams they are in:</p>
+
+    <div class="information-box">
+      <p class="govuk-body information-box-text"><strong>Last updated:</strong> <br> 4 February 2026</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+
+</html>
